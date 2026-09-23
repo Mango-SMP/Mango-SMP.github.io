@@ -20,7 +20,6 @@ const router = createBrowserRouter(
     },
     { path: "/discord", element: <DiscordRedirect /> },
   ],
-  { basename: import.meta.env.VITE_BASENAME },
 )
 
 function App() {
