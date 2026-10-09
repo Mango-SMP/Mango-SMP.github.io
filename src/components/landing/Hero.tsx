@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button"
-import { Copy, Users, Check, Circle } from "lucide-react"
-import { useState, useEffect, useMemo } from "react"
-import axios from "axios"
-import { toast } from "react-toastify"
-import { Link } from "react-router-dom"
 import { socialLinks } from "@/lib/data"
+import axios from "axios"
+import { Check, Circle, Copy, Users } from "lucide-react"
+import { useEffect, useMemo, useState } from "react"
+import { Link } from "react-router-dom"
+import { toast } from "react-toastify"
 
 export default function Hero() {
-  const serverIP = "join.mango.play.hosting"
+  const serverIP = "mangosmp.play.hosting"
 
   const [playerNum, setPlayerNum] = useState(0)
   const [online, setOnline] = useState(false)
